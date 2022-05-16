@@ -1,12 +1,12 @@
 # 0x16. C - Simple Shell
 
-#Learning Objectives#
+##Learning Objectives##
 
 ---
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-#General#
+##General##
 
 Who designed and implemented the original Unix operating system
 
