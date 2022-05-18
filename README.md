@@ -54,8 +54,8 @@ The simple shell has support for the following built-in commands:
 
 ```
 
-## Credits
+**Credits**
 
 Written by
-- [Rony Opunga]
-- [Mary Okumbe]
+- Rony Opunga
+- Mary Okumbe
