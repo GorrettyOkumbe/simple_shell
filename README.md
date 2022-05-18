@@ -52,10 +52,10 @@ The simple shell has support for the following built-in commands:
 | setenv [variable] [value] | Sets an environment variable to a given value |
 | unsetenv [variable]       | Removes an environment variable               |
 
-```
 
-**Credits**
+### Credits
 
 Written by
+
 - Rony Opunga
 - Mary Okumbe
