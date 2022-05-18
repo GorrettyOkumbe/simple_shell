@@ -1,45 +1,61 @@
-# 0x16. C - Simple Shell
+# C - Simple Shell
 
-**Learning Objectives**
+## Description
 
----
+This is a simple UNIX command interpreter written in C.
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+## Compilation
 
-**General**
+The shell program is compiled this way:  
 
-Who designed and implemented the original Unix operating system
+`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
 
-Who wrote the first version of the UNIX shell
+## Usage
 
-Who invented the B programming language (the direct predecessor to the C programming language)
+The shell program can run in either interactive or non-interactive mode.
 
-Who is Ken Thompson
+#### Interactive Mode
 
-How does a shell work
+```
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+```
 
-What is a pid and a ppid
+#### Non-Interactive Mode
 
-How to manipulate the environment of the current process
+```
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$
+```
 
-What is the difference between a function and a system call
+#### Included Built-Ins
 
-How to create processes
+The simple shell has support for the following built-in commands:
 
-What are the three prototypes of main
+| Command                   | Definition                                    |
+| ---------------           | --------------------------------------------- |
+| exit [status]             | Exits the shell with a given status           |
+| env                       | Prints the current environment                |
+| setenv [variable] [value] | Sets an environment variable to a given value |
+| unsetenv [variable]       | Removes an environment variable               |
 
-How does the shell use the PATH to find the programs
+```
 
-How to execute another program with the execve system call
+## Credits
 
-How to suspend the execution of a process until one of its children terminates
-
-What is EOF / “end-of-file”?
-
-**Creditors**
-
--Rony Opunga
-
--Mary Okumbe
-
-
+Written by
+- [Rony Opunga]
+- [Mary Okumbe]
